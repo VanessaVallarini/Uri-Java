@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String nome;
+        double salario,vendas,bonus,novoSalario;
+        nome = sc.next();
+        salario = sc.nextDouble();
+        vendas = sc.nextDouble();
+        bonus = (vendas*15)/100;
+        novoSalario = salario+bonus;
+        System.out.printf("TOTAL = R$ %.2f\n",novoSalario);
+
+}   
+}
