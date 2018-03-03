@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Main {
+  private static int maior(int A, int B) {
+        return (A + B + Math.abs(A - B)) / 2;
+    }
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int A, B, C, maior, resultado;
+        A = entrada.nextInt();
+        B = entrada.nextInt();
+        C = entrada.nextInt();
+
+        int d = maior(maior(A, B), C);
+        System.out.println(d + " eh o maior");
+    }
+
+}
