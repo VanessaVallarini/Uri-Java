@@ -1,0 +1,36 @@
+/**
+ * @author Vanessa Vallarini
+ 
+ OBS: Esse formato é como geralmente eu faço os meus programas:
+ 
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        double R = entrada.nextDouble();   
+        double VOLUME = (4.0/3.0)*3.14159*R*R*R;
+        System.out.printf("VOLUME = %.3f\n", VOLUME);
+    }
+}
+
+ OBS: o de baixo é como o URI aceitou.
+ 
+ */
+ 
+import java.util.Scanner;
+
+public class ex11 {
+    
+    public static double calcula_raio(double raio) {
+        return ((4.0 / 3) * 3.14159 * (Math.pow(3, raio)));
+    }
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        double R = entrada.nextDouble();
+        System.out.printf("VOLUME = %.3f", calcula_raio(R));
+        System.out.println();
+
+    }
+}
+
