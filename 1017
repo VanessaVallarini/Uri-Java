@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+class Main {
+     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int tempo,distancia;
+        tempo = entrada.nextInt();
+        distancia = entrada.nextInt();
+        double r = (double)(distancia/12.0)*tempo;
+        System.out.printf("%.3f\n",r);
+    }
+}
