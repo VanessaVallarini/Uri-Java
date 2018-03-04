@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class Main {
+         public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int n = entrada.nextInt();
+        if(n > 0 && n < 1000000){
+            int valoresNotas[] = {100,50,20,10,5,2,1};
+            System.out.println(n);
+            for (int i = 0; i < valoresNotas.length; i++) {
+                System.out.println(n/ valoresNotas[i]+" nota(s) de R$ "+valoresNotas[i]+",00");
+                n = n % valoresNotas[i];
+            }
+        }
+    }
+}
